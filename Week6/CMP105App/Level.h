@@ -4,6 +4,8 @@
 #include "Framework/Input.h"
 #include <string.h>
 #include <iostream>
+#include "Bounce.h"
+#include "Directions.h"
 
 
 class Level{
@@ -25,4 +27,8 @@ private:
 	Input* input;
 
 	// More level variables
+	Bounce boing;
+	Directions directions;
+	sf::Texture boingTexture;
+	sf::Texture directionTexture;
 };
